@@ -18,7 +18,7 @@ app.use(express.urlencoded({ extended: true }));
 // CORS configuration for Vite + Vercel frontend
 const allowedOrigins = process.env.CLIENT_ORIGIN
   ? process.env.CLIENT_ORIGIN.split(",").map((origin) => origin.trim())
-  : ["http://localhost:5173"];
+  : ["http://localhost:5173","https://amritkbs.vercel.app/"];
 
 app.use(
   cors({
